@@ -4,9 +4,10 @@ import type { ExperienceProps } from "@types";
 
 interface Props {
   experience: ExperienceProps[];
+  cv: string;
 }
 
-const { experience } = Astro.props;
+const { experience, cv } = Astro.props;
 ---
 
 <Section text="Work Experience" href="experience">
@@ -38,4 +39,8 @@ const { experience } = Astro.props;
       </div>
     ))
   }
+  <a
+    class="inline-block rounded-full bg-primary px-8 py-5 text-sm leading-5 font-medium text-[#fff]"
+    href="/cv_floriana.pdf" target="_blank">Download CV</a
+  >
 </Section>

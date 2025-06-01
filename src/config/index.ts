@@ -1,23 +1,21 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Floriana - Frontend Developer",
+  author: "Floriana Sho",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "Crafting modern websites from Tangerang, Indonesia.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/logo_white.png",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/floriana-f-a51636140/" },
+    { text: "Github", href: "https://github.com/Florianasho" },
+    { text: "Instagram", href: "https://www.instagram.com/florianasho" },
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -25,74 +23,84 @@ export const SITE_CONFIG: SiteConfig = {
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Floriana",
+    specialty: "Frontend Web Developer",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Crafting modern websites from Tangerang, Indonesia.",
+    email: "florianasho@gmail.com",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "Sirclo",
+      position: "Software Engineer",
+      startDate: "Nov 2022",
+      endDate: "Aug 2023",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Collaborated with the Sirclo Store team to craft tailored client websites using ReactJS, Next.js, GraphQL, and SCSS for seamless, scalable solutions.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "Orami by Sirclo",
+      position: "Software Engineer",
+      startDate: "Nov 2019",
+      endDate: "Nov 2022",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Worked with the B2B team to build and maintain a custom bulk marketplace and seller page platform, leveraging ReactJS, Redux, Next.js, and SCSS for a scalable user experience.",
       ],
     },
     {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
+      company: "Onero Solutions",
+      position: "Lead Frontend Developer",
+      startDate: "Jan 2018",
+      endDate: "Nov 2019",
       summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+        "Built responsive web and mobile interfaces while collaborating with UI/UX Designers for usability. Led the Frontend team in tool selection and troubleshooting, using Vue.js, Quasar, JavaScript, PHP, and CodeIgniter.",
+    },
+    {
+      company: "Luminov",
+      position: "Web Developer",
+      startDate: "Sep 2017",
+      endDate: "Jan 2018",
+      summary:
+        "Built custom client websites at Luminov using HTML, CSS, and CodeIgniter, turning Photoshop designs into responsive digital experiences.",
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
+      name: "Cherish Academy",
+      summary: "Crafted a modern, user-friendly website for Cherish Academy that brings everything—from admissions to academics and careers—into one seamless experience.",
       linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      linkSource: "https://cherishacademy.sch.id",
+      image: "/cherish-academy.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
+      name: "Cherish International Publisher",
+      summary: "Developed an educational website for PT Cherish International, showcasing inclusive books for early learners and children with special needs.",
       linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
+      linkSource: "https://cherishintlpublisher.com",
+      image: "/cherish-publisher.png",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
+      name: "PT Aneka Kaoline Utama",
+      summary: "Designed a professional and easy-to-navigate profile site for PT Aneka Kaoline Utama, complete with product showcases, corporate info, and latest company news.",
       linkPreview: "/",
       linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      image: "/aneka-kaoline.png",
+    },
+    {
+      name: "Mata Investments",
+      summary: "Crafted a modern and minimalist digital presence for Mata Investments — a company profile website that communicates their vision, portfolio, and strategy with clarity and elegance.",
+      linkPreview: "/",
+      linkSource: "https://matainvestments.co",
+      image: "/mata-investments.png",
     },
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      Hi, I'm Floriana — a Frontend Web Developer with experience in building modern web applications using React.js, Next.js, Vue.js, GraphQL, Tailwind, TypeScript, and CodeIgniter.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      I hold a Bachelor’s degree in Computer Science from Binus University and enjoy crafting clean, user-focused interfaces.
     `,
-    image: "/alejandro-big.jpg",
+    image: "/picture01.png",
   },
 };
-
-// #5755ff
