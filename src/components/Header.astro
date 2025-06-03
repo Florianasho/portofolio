@@ -54,21 +54,11 @@ const { siteLogo, navLinks } = Astro.props;
 </div>
 
 <script>
-  // // Add background color on scrolled
-  // const header = document.querySelector("header");
-
-  // window.addEventListener("scroll", () => {
-  //   if (window.scrollY > 100) {
-  //     header?.classList.add("bg-black");
-  //   } else {
-  //     header?.classList.remove("bg-black");
-  //   }
-  // });
-
   // Toggle mobile menu
   const button = document.querySelector("#menu-button");
   const menu = document.querySelector("#main-menu");
   const navItems = document.querySelectorAll("#main-menu > ul > li > a");
+  const sentinels = document.querySelectorAll(".section-sentinel");
 
   const toggleMenu = () => {
     menu?.classList.toggle("hidden");
@@ -82,12 +72,15 @@ const { siteLogo, navLinks } = Astro.props;
   });
 
   // Update navigation based on scroll position with Intersection Observer
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
+          const section = entry.target;
+          const id = section.getAttribute("id");
           navItems.forEach((item) => {
-            if (item.getAttribute("href") === `#${entry.target.id}`) {
+            if (item.getAttribute("href") === `#${id}`) {
               item.classList.add("text-white", "md:after:opacity-100");
             } else {
               item.classList.remove("text-white", "md:after:opacity-100");
@@ -96,8 +89,15 @@ const { siteLogo, navLinks } = Astro.props;
         }
       });
     },
-    { threshold: 0.5 },
+    {
+      root: null,
+      threshold: 0,
+      rootMargin: "-50% 0px -50% 0px",
+    }
   );
+
+  sentinels.forEach((sentinel) => observer.observe(sentinel));
+
 
   document.querySelectorAll("section").forEach((section) => {
     observer.observe(section);

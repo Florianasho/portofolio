@@ -5,3 +5,11 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
+.section-sentinel {
+  position: absolute;
+  top: 0;
+  height: 1px;
+  width: 1%;
+  pointer-events: none;
+}
